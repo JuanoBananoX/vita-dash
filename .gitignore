@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# VS Code
+.vscode/
+
+# Node.js (para futuras herramientas)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
