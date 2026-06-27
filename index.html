@@ -1,111 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=600, initial-scale=1.0">
-    <title>Vita Master Portal</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: sans-serif;
-            margin: 10px;
-            padding: 0;
-        }
-        h1 { color: #0078d7; font-size: 24px; text-align: center; margin-bottom: 20px; }
-        h2 { color: #ffaa00; font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 5px; margin-top: 0; }
-        
-        .row {
-            width: 100%;
-            clear: both;
-            margin-bottom: 15px;
-        }
-        .column {
-            float: left;
-            width: 46%;
-            margin: 2%;
-            background-color: #1e1e1e;
-            padding: 12px;
-            border-radius: 5px;
-            box-sizing: border-box;
-            min-height: 180px;
-        }
-        /* Full-width container highlighting your personal blog */
-        .full-column {
-            float: left;
-            width: 96%;
-            margin: 2%;
-            background-color: #1a2634; 
-            padding: 15px;
-            border-radius: 5px;
-            box-sizing: border-box;
-            min-height: 200px;
-        }
-        ul { list-style-type: none; padding: 0; margin: 0; }
-        li { margin-bottom: 14px; line-height: 1.3; }
-        a { color: #4af; text-decoration: none; font-size: 14px; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        
-        /* Layout overrides to style the new RSS 2 HTML elements */
-        .bloople_feed { font-size: 13px; }
-        .bloople_feed a { color: #4af; font-weight: normal; text-decoration: none; }
-        .bloople_feed a:hover { text-decoration: underline; }
-        
-        .clear { clear: both; }
-    </style>
+    <meta name="viewport" content="width=960">
+    <title>VitaDash</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Vita Master Portal</h1>
+    <header>
 
-    <!-- ROW 1: STATIC NAVIGATION BOARDS -->
-    <div class="row">
-        <div class="column">
-            <h2>Quick Navigation</h2>
-            <ul>
-                <li><a href="https://rinnegatamante.it">VitaDB Homebrew</a></li>
-                <li><a href="https://wololo.net">Wololo Scene News</a></li>
-                <li><a href="https://ign.com">IGN Gaming</a></li>
-            </ul>
-        </div>
+        <h1>VitaDash</h1>
 
-        <div class="column">
-            <h2>Social Media</h2>
-            <ul>
-                <li><a href="https://reddit.com">r/vitahacks (Old Reddit)</a></li>
-                <li><a href="https://nitter.net">Nitter (Twitter Client)</a></li>
-                <li><a href="https://yewtu.be">Invidious (YouTube Client)</a></li>
-            </ul>
-        </div>
-    </div>
+        <p>
+            Reviving the web experience on PlayStation Vita.
+        </p>
 
-    <div class="clear"></div>
+    </header>
 
-    <!-- ROW 2: LIVE DYNAMIC RSS FEEDS -->
-    <div class="row">
-        <div class="column" style="min-height: 320px;">
-            <h2>Live Scene Updates</h2>
-            <script src="https://bloople.net"></script>
-        </div>
+    <main>
 
-        <div class="column" style="min-height: 320px;">
-            <h2>Live Gaming News</h2>
-            <script src="https://bloople.net"></script>
-        </div>
-    </div>
+        <section class="panel" id="search-panel">
 
-    <div class="clear"></div>
+            <h2>Search</h2>
 
-    <!-- ROW 3: PERSONAL BLOG ROW -->
-    <div class="row">
-        <div class="full-column">
-            <h2>My Personal Blog</h2>
-            <script src="//rss.bloople.net/?url=https%3A%2F%2Fblog.ortegaflores.com%2Ffeeds%2Fposts%2Fdefault&detail=20&limit=5&showtitle=false&type=js"></script>
-        </div>
-    </div>
+            <form action="https://duckduckgo.com/html/" method="GET">
 
-    <div class="clear"></div>
+                <input
+                    type="text"
+                    name="q"
+                    placeholder="Search the web">
+
+                <input
+                    type="submit"
+                    value="Go">
+
+            </form>
+
+        </section>
+
+        <section class="panel" id="links-panel">
+
+            <h2>Quick Links</h2>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="https://vitadb.rinnegatamante.it">
+                            VitaDB
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wololo.net">
+                            Wololo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.reddit.com/r/vitahacks/">
+                            VitaHacks
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://archive.org">
+                            Internet Archive
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+        <section class="panel" id="blog-panel">
+
+            <h2>Latest Blog Posts</h2>
+
+            <div id="blog-feed">
+
+                Loading...
+
+            </div>
+
+        </section>
+
+        <section class="panel" id="news-panel">
+
+            <h2>Scene News</h2>
+
+            <div id="scene-feed">
+
+                Loading...
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            VitaDash v0.1.0
+        </p>
+
+    </footer>
+
+    <script src="scripts/feed.js"></script>
 
 </body>
-</html>
 
+</html>
