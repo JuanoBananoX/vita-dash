@@ -23,85 +23,81 @@
 
     <main>
 
-        <section class="panel" id="search-panel">
+        <section class="panel" id="panel-search">
 
             <h2>Search</h2>
+            <div class="panel-content"> 
+                <form action="https://duckduckgo.com/html/" method="GET">
+                    <input
+                        type="text"
+                        name="q"
+                        placeholder="Search the web">
 
-            <form action="https://duckduckgo.com/html/" method="GET">
+                    <input
+                        type="submit"
+                        value="Go">
 
-                <input
-                    type="text"
-                    name="q"
-                    placeholder="Search the web">
-
-                <input
-                    type="submit"
-                    value="Go">
-
-            </form>
+                </form>
+            </div>
 
         </section>
 
-        <section class="panel" id="links-panel">
+        <section class="panel" id="panel-links">
 
             <h2>Quick Links</h2>
+            <div class="panel-content"> 
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://vitadb.rinnegatamante.it">
+                                VitaDB
+                            </a>
+                        </li>
 
-            <nav>
+                        <li>
+                            <a href="https://wololo.net">
+                                Wololo
+                            </a>
+                        </li>
 
-                <ul>
+                        <li>
+                            <a href="https://www.reddit.com/r/vitahacks/">
+                                VitaHacks
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="https://vitadb.rinnegatamante.it">
-                            VitaDB
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://wololo.net">
-                            Wololo
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.reddit.com/r/vitahacks/">
-                            VitaHacks
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://archive.org">
-                            Internet Archive
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
+                        <li>
+                            <a href="https://archive.org">
+                                Internet Archive
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>     
         </section>
 
-        <section class="panel" id="blog-panel">
+        <section class="panel" id="panel-blog">
 
             <h2>Latest Blog Posts</h2>
+            <div class="panel-content">
+                <div id="blog-feed">
 
-            <div id="blog-feed">
+                    Loading...
 
-                Loading...
-
+                </div>
             </div>
-
         </section>
 
-        <section class="panel" id="news-panel">
+        <section class="panel" id="panel-news">
 
             <h2>Scene News</h2>
+            <div class="panel-content"> 
+                <div id="scene-feed">
 
-            <div id="scene-feed">
+                    Loading...
 
-                Loading...
-
+                </div>
             </div>
-
         </section>
 
     </main>

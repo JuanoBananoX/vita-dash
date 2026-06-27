@@ -1,0 +1,222 @@
+/*
+ * VitaDash
+ * Reviving the web experience on PlayStation Vita.
+ */
+
+html {
+    background-color: #0e1621;
+}
+
+body {
+    width: 940px;
+    margin: 0 auto;
+    padding: 12px;
+
+    background-color: #0e1621;
+
+    color: #f0f0f0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+
+    color: #5fb3ff;
+
+    font-size: 34px;
+}
+
+header p {
+    margin-top: 6px;
+
+    color: #b8c2cc;
+
+    font-size: 15px;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    font-size: 0;
+}
+
+/* ---------- Panels ---------- */
+
+.panel {
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 445px;
+
+    margin: 10px;
+
+    border: 1px solid #35597a;
+
+    background-color: #1c2634;
+
+    box-sizing: border-box;
+}
+
+.panel h2 {
+
+    margin: 0;
+
+    padding: 10px;
+
+    background-color: #243447;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    border-bottom: 1px solid #35597a;
+}
+
+.panel-content {
+
+    padding: 12px;
+
+    font-size: 16px;
+}
+
+/* ---------- Search ---------- */
+
+input[type=text] {
+
+    width: 320px;
+
+    padding: 8px;
+
+    font-size: 16px;
+
+    border: 1px solid #35597a;
+
+    background-color: #0f1621;
+
+    color: white;
+}
+
+input[type=submit] {
+
+    padding: 8px 14px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border: 1px solid #35597a;
+
+    background-color: #35597a;
+
+    color: white;
+}
+
+/* ---------- Lists ---------- */
+
+ul {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+li a {
+    background-color: #1f2d3d;
+}
+
+li a:hover,
+li a:focus {
+    background-color: #35597a;
+}
+
+/* ---------- Links ---------- */
+
+a {
+    display: block;
+
+    padding: 8px 10px;
+
+    color: #77c5ff;
+
+    text-decoration: none;
+
+    border: 1px solid transparent;
+}
+
+a:link {
+    color: #77c5ff;
+}
+
+a:visited {
+    color: #b08cff;
+}
+
+a:hover {
+    background-color: #243447;
+
+    border-color: #5fb3ff;
+}
+
+a:focus {
+    background-color: #35597a;
+
+    border-color: #5fb3ff;
+
+    color: #ffffff;
+
+    outline: none;
+}
+
+a:active {
+    background-color: #5fb3ff;
+
+    color: #0e1621;
+
+    border-color: #ffffff;
+}
+
+
+/* ---------- Feed ---------- */
+
+.feed-placeholder {
+
+    color: #8e99a5;
+
+    font-style: italic;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+
+    margin-top: 25px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #35597a;
+
+    color: #8e99a5;
+
+    text-align: center;
+
+    font-size: 13px;
+}
