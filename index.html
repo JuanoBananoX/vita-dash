@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=600, initial-scale=1.0">
-    <title>Vita Dashboard</title>
+    <title>Vita Master Portal</title>
     <style>
         body {
             background-color: #121212;
@@ -12,33 +12,47 @@
             margin: 10px;
             padding: 0;
         }
-        h1 { color: #0078d7; font-size: 24px; text-align: center; }
-        h2 { color: #ffaa00; font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 5px; }
-        .container { width: 100%; }
+        h1 { color: #0078d7; font-size: 24px; text-align: center; margin-bottom: 20px; }
+        h2 { color: #ffaa00; font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 5px; margin-top: 0; }
+        
+        .row {
+            width: 100%;
+            clear: both;
+            margin-bottom: 15px;
+        }
         .column {
             float: left;
             width: 46%;
             margin: 2%;
             background-color: #1e1e1e;
-            padding: 10px;
+            padding: 12px;
             border-radius: 5px;
             box-sizing: border-box;
+            min-height: 180px;
         }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 12px; }
-        a { color: #4af; text-decoration: none; font-size: 14px; }
+        ul { list-style-type: none; padding: 0; margin: 0; }
+        li { margin-bottom: 14px; line-height: 1.3; }
+        a { color: #4af; text-decoration: none; font-size: 14px; font-weight: bold; }
         a:hover { text-decoration: underline; }
+        
+        /* Styles for the dynamic RSS feed feeds */
+        .rss-box { font-size: 13px; }
+        .rss-item { margin-bottom: 12px; border-bottom: 1px dashed #333; padding-bottom: 8px; }
+        .rss-title a { color: #4af; font-weight: normal; }
+        .rss-date { color: #888; font-size: 11px; display: block; margin-top: 2px; }
+        
         .clear { clear: both; }
     </style>
 </head>
 <body>
 
-    <h1>Vita Portal</h1>
+    <h1>Vita Master Portal</h1>
 
-    <div class="container">
-        <!-- Column 1: Homebrew & News -->
+    <!-- ROW 1: STATIC NAVIGATION BOARDS -->
+    <div class="row">
+        <!-- Column 1: Links & Utilities -->
         <div class="column">
-            <h2>Updates & News</h2>
+            <h2>Quick Navigation</h2>
             <ul>
                 <li><a href="https://rinnegatamante.it">VitaDB Homebrew</a></li>
                 <li><a href="https://wololo.net">Wololo Scene News</a></li>
@@ -54,6 +68,29 @@
                 <li><a href="https://nitter.net">Nitter (Twitter Client)</a></li>
                 <li><a href="https://yewtu.be">Invidious (YouTube Client)</a></li>
             </ul>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- ROW 2: LIVE DYNAMIC RSS FEEDS -->
+    <div class="row">
+        <!-- Column 3: Live Wololo Feed -->
+        <div class="column" style="min-height: 320px;">
+            <h2>Live Scene Updates</h2>
+            <div class="rss-box">
+                <!-- Feed2JS script pulling Wololo's RSS feed -->
+                <script src="https://feed2js.org" type="text/javascript"></script>
+            </div>
+        </div>
+
+        <!-- Column 4: Live IGN Feed -->
+        <div class="column" style="min-height: 320px;">
+            <h2>Live Gaming News</h2>
+            <div class="rss-box">
+                <!-- Feed2JS script pulling IGN's RSS feed -->
+                <script src="https://feed2js.org" type="text/javascript"></script>
+            </div>
         </div>
     </div>
 
