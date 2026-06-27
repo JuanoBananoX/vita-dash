@@ -30,16 +30,26 @@
             box-sizing: border-box;
             min-height: 180px;
         }
+        /* Full-width container highlighting your personal blog */
+        .full-column {
+            float: left;
+            width: 96%;
+            margin: 2%;
+            background-color: #1a2634; 
+            padding: 15px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            min-height: 200px;
+        }
         ul { list-style-type: none; padding: 0; margin: 0; }
         li { margin-bottom: 14px; line-height: 1.3; }
         a { color: #4af; text-decoration: none; font-size: 14px; font-weight: bold; }
         a:hover { text-decoration: underline; }
         
-        /* Styles for the dynamic RSS feed feeds */
-        .rss-box { font-size: 13px; }
-        .rss-item { margin-bottom: 12px; border-bottom: 1px dashed #333; padding-bottom: 8px; }
-        .rss-title a { color: #4af; font-weight: normal; }
-        .rss-date { color: #888; font-size: 11px; display: block; margin-top: 2px; }
+        /* Layout overrides to style the new RSS 2 HTML elements */
+        .bloople_feed { font-size: 13px; }
+        .bloople_feed a { color: #4af; font-weight: normal; text-decoration: none; }
+        .bloople_feed a:hover { text-decoration: underline; }
         
         .clear { clear: both; }
     </style>
@@ -50,7 +60,6 @@
 
     <!-- ROW 1: STATIC NAVIGATION BOARDS -->
     <div class="row">
-        <!-- Column 1: Links & Utilities -->
         <div class="column">
             <h2>Quick Navigation</h2>
             <ul>
@@ -60,7 +69,6 @@
             </ul>
         </div>
 
-        <!-- Column 2: Social Media Frontends -->
         <div class="column">
             <h2>Social Media</h2>
             <ul>
@@ -75,22 +83,24 @@
 
     <!-- ROW 2: LIVE DYNAMIC RSS FEEDS -->
     <div class="row">
-        <!-- Column 3: Live Wololo Feed -->
         <div class="column" style="min-height: 320px;">
             <h2>Live Scene Updates</h2>
-            <div class="rss-box">
-                <!-- Feed2JS script pulling Wololo's RSS feed -->
-                <script src="https://feed2js.org" type="text/javascript"></script>
-            </div>
+            <script src="https://bloople.net"></script>
         </div>
 
-        <!-- Column 4: Live IGN Feed -->
         <div class="column" style="min-height: 320px;">
             <h2>Live Gaming News</h2>
-            <div class="rss-box">
-                <!-- Feed2JS script pulling IGN's RSS feed -->
-                <script src="https://feed2js.org" type="text/javascript"></script>
-            </div>
+            <script src="https://bloople.net"></script>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- ROW 3: PERSONAL BLOG ROW -->
+    <div class="row">
+        <div class="full-column">
+            <h2>My Personal Blog</h2>
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Fblog.ortegaflores.com%2Ffeeds%2Fposts%2Fdefault&detail=20&limit=5&showtitle=false&type=js"></script>
         </div>
     </div>
 
@@ -98,3 +108,4 @@
 
 </body>
 </html>
+
