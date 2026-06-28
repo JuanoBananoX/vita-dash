@@ -78,25 +78,17 @@
 
         <section class="panel" id="panel-blog">
 
-            <h2>Latest Blog Posts</h2>
+            <h2>Loading ...</h2>
             <div class="panel-content">
-                <div id="blog-feed">
-
-                    Loading...
-
-                </div>
+                Loading...
             </div>
         </section>
 
         <section class="panel" id="panel-news">
 
-            <h2>Scene News</h2>
+            <h2>Loading ...</h2>
             <div class="panel-content"> 
-                <div id="scene-feed">
-
-                    Loading...
-
-                </div>
+                Loading...
             </div>
         </section>
 
@@ -113,5 +105,21 @@
     <script src="scripts/feed.js"></script>
 
 </body>
+
+<script src="scripts/widgets.js"></script>
+
+<script>
+
+    loadFeed(
+        "feeds/blog.json",
+        "panel-blog"
+    );
+
+    loadFeed(
+        "feeds/scene.json",
+        "panel-news"
+    );
+
+</script>
 
 </html>
