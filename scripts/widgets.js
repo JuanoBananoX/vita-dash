@@ -10,9 +10,7 @@
     }
 
     function renderFeed(panel, feed) {
-
         var html = "<ul>";
-
         var i;
 
         for (i = 0; i < feed.entries.length; i++) {
@@ -27,16 +25,19 @@
 
             html += "</a>";
 
-            html += "</li>";
+            if (feed.entries[i].date) {
+                html += "<div class=\"feed-date\">";
+                html += formatDate(feed.entries[i].date);
+                html += "</div>";
+            }
 
+            html += "</li>";
         }
 
         html += "</ul>";
 
         panel.getElementsByTagName("h2")[0].innerHTML = feed.title;
-
         panel.getElementsByClassName("panel-content")[0].innerHTML = html;
-
     }
 
     window.loadFeed = function (jsonFile, panelId) {

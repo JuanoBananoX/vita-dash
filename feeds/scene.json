@@ -1,0 +1,29 @@
+{
+    "title": "Scene News",
+    "entries": [
+        {
+            "title": "New VitaDB release available",
+            "url": "https://vitadb.rinnegatamante.it/",
+            "date": "2026-06-27",
+            "author": "Rinnegatamante"
+        },
+        {
+            "title": "Adrenaline compatibility update",
+            "url": "https://wololo.net/",
+            "date": "2026-06-25",
+            "author": "Wololo"
+        },
+        {
+            "title": "New homebrew game announced",
+            "url": "https://wololo.net/",
+            "date": "2026-06-22",
+            "author": "Wololo"
+        },
+        {
+            "title": "Community translation reaches v2.0",
+            "url": "https://wololo.net/",
+            "date": "2026-06-18",
+            "author": "Wololo"
+        }
+    ]
+}

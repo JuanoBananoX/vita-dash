@@ -1,0 +1,29 @@
+{
+    "title": "Juan's Blog",
+    "entries": [
+        {
+            "title": "Welcome to VitaDash",
+            "url": "https://blog.ortegaflores.com/",
+            "date": "2026-06-27",
+            "author": "Juan Ortega Flores"
+        },
+        {
+            "title": "Building a Dashboard for the PS Vita",
+            "url": "https://blog.ortegaflores.com/",
+            "date": "2026-06-24",
+            "author": "Juan Ortega Flores"
+        },
+        {
+            "title": "Homebrew Projects I'm Working On",
+            "url": "https://blog.ortegaflores.com/",
+            "date": "2026-06-20",
+            "author": "Juan Ortega Flores"
+        },
+        {
+            "title": "Why Legacy Devices Still Matter",
+            "url": "https://blog.ortegaflores.com/",
+            "date": "2026-06-15",
+            "author": "Juan Ortega Flores"
+        }
+    ]
+}
