@@ -40,6 +40,27 @@
         panel.getElementsByClassName("panel-content")[0].innerHTML = html;
     }
 
+    function formatDate(dateString) {
+        if (!dateString) {
+            return "";
+        }
+
+        var date = new Date(dateString);
+
+        if (isNaN(date.getTime())) {
+            return dateString;
+        }
+
+        var months = [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ];
+
+        return months[date.getMonth()] + " " +
+            date.getDate() + ", " +
+            date.getFullYear();
+    }
+
     window.loadFeed = function (jsonFile, panelId) {
 
         var panel = document.getElementById(panelId);
