@@ -1,29 +1,77 @@
 {
-    "title": "Juan's Blog",
+    "title": "MasterBlog",
+    "source": "https://blog.ortegaflores.com/feeds/posts/default",
+    "updated": "2026-07-16T23:47:59.823Z",
     "entries": [
         {
-            "title": "Welcome to VitaDash",
-            "url": "https://blog.ortegaflores.com/",
-            "date": "2026-06-27",
-            "author": "Juan Ortega Flores"
+            "title": "Starter Villain",
+            "url": "https://blog.ortegaflores.com/2025/04/starter-villain.html",
+            "date": "2025-04-09T21:13:00.004Z",
+            "author": "JuanoBananoX",
+            "summary": "Una historia ligera, llena de humor y con personajes atractivos que te engancha. Starter Villain de John Scalzi es un libro que te saca de la rutina y te transporta a su mundo en el que todo puede pasar, y ayuda a aceptar que aunque no controlemos todo lo que nos pasa, podemos disfrutar de lo que tenemos.\nRead more »"
         },
         {
-            "title": "Building a Dashboard for the PS Vita",
-            "url": "https://blog.ortegaflores.com/",
-            "date": "2026-06-24",
-            "author": "Juan Ortega Flores"
+            "title": "Los Siete Maridos de Evelyn Hugo",
+            "url": "https://blog.ortegaflores.com/2025/03/los-siete-maridos-de-evelyn-hugo.html",
+            "date": "2025-03-14T21:18:00.025Z",
+            "author": "JuanoBananoX",
+            "summary": "Siempre se ha sabido que como personas sentimos fascinación por aquellos que tienen cierta fama y fortuna, desde los tiempos del Imperio Romano con los Gladiadores, hasta la era actual con los artistas e influencers. Los Siete Maridos de Evelyn Hugo de Taylor Jenkins Reid, nos permite explorar ese mundo que crea la fama y nos permite ver que lo que todos admiramos desde fuera no siempre es todo lo que hay, y definitivamente no es fácil mostrar una cara a los demás cuando por detrás hay una vida tan dificil como la que a muchos nos toca vivir.\nRead more »"
         },
         {
-            "title": "Homebrew Projects I'm Working On",
-            "url": "https://blog.ortegaflores.com/",
-            "date": "2026-06-20",
-            "author": "Juan Ortega Flores"
+            "title": "Cómo modificar el prompt de consola",
+            "url": "https://blog.ortegaflores.com/2024/01/como-modificar-el-prompt-de-consola.html",
+            "date": "2024-01-23T01:30:00.219Z",
+            "author": "JuanoBananoX",
+            "summary": "La terminal de Linux es una herramienta muy útil y poderosa, y siendo Linux uno de los Sistemas Operativos más usados en los servidores web, es una herramienta sumamente usada. Como programador, la terminal es una herramienta en la que se pasa mucho tiempo, sobre todo si se utiliza git. Por eso mismo en este artículo voy a ayudar a personalizar un poco ésta herramienta.\nMuchas veces, ocurren errores dentro de los proyectos de git debido a que el programador no tiene la información de la rama en la que se ubica o del directorio en el que se está trabajando. En este artículo voy a detallar cómo hacer para mostrar información útil acerca del repositorio git en el que estamos trabajando, así como el directorio en el que nos posicionamos de manera fácil y rápida.\nLo primero que debemos hacer es iniciar un proyecto git (o movernos a una carpeta en la que ya tengamos un proyecto iniciado). Una vez que ya estemos en el proyecto necesitamos editar la variable PS1 del sistema. PS1 significa Prompt String 1, y es una variable de sistema que puede ser utilizada para dar información en la linea de comandos de Linux/Unix.\nPara lograr editar esta variable, necesitamos hacer lo siguiente:\n\n\nEditar nuestro archivo .bashrc: \nnano ~/.bashrc\n\nEditar la variable agregando esto al final del archivo:\n\n\nparse_git_branch() {\n   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/ (\\1)/'\n}\nPS1=\"${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[33m\\]\\$(parse_git_branch)\\[\\033[00m\\] $ \"\n\nEsto va a producir lo siguiente en nuestro prompt:\n\n\n ${debian_chroot:+($debian_chroot)} – Condicional que checa si debian_chroot existe, de ser así, lo agrega en el prompt para indicar que el usuario está en dicho ambiente.\n\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]: – Despliega el nombre de usuario (\\u) y en hostname (\\h) en color verde (y luego cancelamos el color para desplegar :)\n\\[\\033[01;34m\\]\\w - Despliega el directorio en el que nos encontramos,en color azul.\n\\[\\033[33m\\]\\$(parse_git_branch)\\[\\033[00m\\] $  – Despliega el resultado de la función parse_git_branch que nos dice el nombre de la rama en la que nos encontramos en ese momento, en color amarillo; y finalmente cancelamos color y terminamos la entrada.\n\nGuardamos el archivo.\nAplicamos los cambos corriendo: \nsource ~/.bashrc\n\nDespués de haber hecho esto, podemos ver que la linea de comandos ahora nos despliega información útil a primera vista que nos pueden ayudar a evitar errores (como usar una rama de nuestro proyecto que no queremos).\n\n\n\nPara más infrmación acerca de la variable PS1, les dejo el siguiente enlace: Bash Prompt PS1"
         },
         {
-            "title": "Why Legacy Devices Still Matter",
-            "url": "https://blog.ortegaflores.com/",
-            "date": "2026-06-15",
-            "author": "Juan Ortega Flores"
+            "title": "Cómo configurar un .gitignore global",
+            "url": "https://blog.ortegaflores.com/2024/01/como-configurar-un-gitignore-global.html",
+            "date": "2024-01-20T01:00:00.142Z",
+            "author": "JuanoBananoX",
+            "summary": "Muchas veces cuando se trabaja con un repositorio git es necesario que ciertos archivos no se sincronicen. Para lograr esto, Git nos da una opción muy rápida y sencilla, el archivo .gitignore.\nRead more »"
+        },
+        {
+            "title": "Cómo forzar una linea en blanco al final del archivo en VS Code",
+            "url": "https://blog.ortegaflores.com/2023/07/como-forzar-una-linea-en-blanco-al.html",
+            "date": "2023-07-26T14:00:00.117Z",
+            "author": "JuanoBananoX",
+            "summary": "Muchas veces dentro de proyectos de desarrollo de software ocurren errores o \"bugs\" a causa de factores externos a nuestro programa. Muchas veces es por la interacción de nuestro código con el código de otros - mediante plugins o librerías - y muchas otras es por la infraestructura en la que vivirá nuestro código - el servidor, los protocolos de comunicación, etc. - \n\nRead more »"
+        },
+        {
+            "title": "Hoy vi Saturno",
+            "url": "https://blog.ortegaflores.com/2023/07/hoy-vi-saturno.html",
+            "date": "2023-07-20T12:54:00.002Z",
+            "author": "JuanoBananoX",
+            "summary": "Cuando miramos hacia el cielo, sentimos que somos más pequeños y más insignificantes que un grano de arena, pero nos damos cuenta que es eso mismo lo que nos hace gigantes y nos invita a hacer más y más.\nRead more »"
+        },
+        {
+            "title": "Canción del día: Go gentle",
+            "url": "https://blog.ortegaflores.com/2023/07/cancion-del-dia-go-gentle.html",
+            "date": "2023-07-16T03:00:00.008Z",
+            "author": "JuanoBananoX",
+            "summary": "La canción del día de hoy es:\n\nRobbie Williams - Go gentle\nRead more »"
+        },
+        {
+            "title": "Cómo agregar bloques de código en Blogger",
+            "url": "https://blog.ortegaflores.com/2023/04/como-agregar-bloques-de-codigo-en.html",
+            "date": "2023-04-05T01:00:00.005Z",
+            "author": "JuanoBananoX",
+            "summary": "Blogger es una de las principales plataformas de blogging a nivel mundial. Sin embargo, para el usuario común es una plataforma no muy amigable si quieres hacer algo más que solamente escribir. Un ejemplo claro de esto se puede ver en los blogs que hablan sobre la programación. Mientras otras plataformas como WordPress tienen plugins que permiten la inserción de código de una forma sencilla y amigable para el usuario, Blogger no ofrece nada similar y si quieres poder insertar código debes de hacerlo como si fuera texto simple, perdiendo la flexibilidad de estilizar o de hacer llamativo tu bloque. Hoy les mostraré como cambiar esto.\nRead more »"
+        },
+        {
+            "title": "Metal Gear Solid 4",
+            "url": "https://blog.ortegaflores.com/2023/03/metal-gear-solid-4.html",
+            "date": "2023-03-24T21:30:00.001Z",
+            "author": "JuanoBananoX",
+            "summary": "War has changed...\n\nImagina un mundo en el que la economía se basa en las innumerables e interminables guerras, un mundo en el que cada instrumento sea controlado en base a identificadores únicos, en el que cada movimiento de los soldados sea meticulosamente medido, cada latido, cada emoción, todo. Imagina un mundo en el que el control de las máquinas o la IA sea total. Imagina ser el encargado de salvar a la humanidad de dicho destino...\nRead more »"
+        },
+        {
+            "title": "Canción del día: I've got you under my skin",
+            "url": "https://blog.ortegaflores.com/2023/02/cancion-del-dia-ive-got-you-under-my.html",
+            "date": "2023-02-22T04:00:00.019Z",
+            "author": "JuanoBananoX",
+            "summary": "La canción del día de hoy es:\n\nFrank Sinatra - I've got you under my skin\nRead more »"
         }
     ]
 }

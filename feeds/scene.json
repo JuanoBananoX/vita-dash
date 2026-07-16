@@ -1,29 +1,42 @@
 {
-    "title": "Scene News",
+    "title": "Wololo.net",
+    "source": "https://wololo.net/feed",
+    "updated": "2026-07-16T23:48:02.568Z",
     "entries": [
         {
-            "title": "New VitaDB release available",
-            "url": "https://vitadb.rinnegatamante.it/",
-            "date": "2026-06-27",
-            "author": "Rinnegatamante"
+            "title": "Homebrew Release: Warnel Chawpiovs v1.5.0 (PC, Nintendo Switch, Android), adds 9 new heroes and significant performance improvements",
+            "url": "https://wololo.net/2026/07/03/homebrew-release-warnel-chawpiovs-v1-5-0-pc-nintendo-switch-android-adds-9-new-heroes-and-significant-performance-improvements/",
+            "date": "2026-07-03T13:39:36.000Z",
+            "author": "wololo",
+            "summary": "I’ve just released version 1.5.0 of “Warnel Chawpiovs”, a homebrew game for PC (Windows, Linux, MacOS versions are now available), Nintendo Switch, and Android. This new release fixes some significant rendering and performance issues....\nThe post Homebrew Release: Warnel Chawpiovs v1.5.0 (PC, Nintendo Switch, Android), adds 9 new heroes and significant performance improvements appeared first on Wololo.net."
         },
         {
-            "title": "Adrenaline compatibility update",
-            "url": "https://wololo.net/",
-            "date": "2026-06-25",
-            "author": "Wololo"
+            "title": "Homebrew Release: Warnel Chawpiovs v1.4.0 (PC, Nintendo Switch, Android), adds Android Support, 7 new heroes, and 5 new scenarios",
+            "url": "https://wololo.net/2026/06/16/homebrew-release-warnel-chawpiovs-v1-4-0-pc-nintendo-switch-android-adds-android-support-7-new-heroes-and-5-new-scenarios/",
+            "date": "2026-06-16T05:58:52.000Z",
+            "author": "wololo",
+            "summary": "I’ve just released version 1.4.0 of “Warnel Chawpiovs”, a homebrew game for PC (Windows, Linux, MacOS versions are now available), Nintendo Switch, and now available for Android as well. This new release fixes a...\nThe post Homebrew Release: Warnel Chawpiovs v1.4.0 (PC, Nintendo Switch, Android), adds Android Support, 7 new heroes, and 5 new scenarios appeared first on Wololo.net."
         },
         {
-            "title": "New homebrew game announced",
-            "url": "https://wololo.net/",
-            "date": "2026-06-22",
-            "author": "Wololo"
+            "title": "Unlocking the PSP’s Dual Core setup.",
+            "url": "https://wololo.net/2026/06/16/unlocking-the-psps-dual-core-setup/",
+            "date": "2026-06-16T04:25:34.000Z",
+            "author": "Acid_Snake",
+            "summary": "Contrary to what Sony wanted everyone to believe, the PSP is not actually a single core setup, it is in fact a dual core setup, and PSP Guru m-cid is here to break it...\nThe post Unlocking the PSP’s Dual Core setup. appeared first on Wololo.net."
         },
         {
-            "title": "Community translation reaches v2.0",
-            "url": "https://wololo.net/",
-            "date": "2026-06-18",
-            "author": "Wololo"
+            "title": "Homebrew Release: Warnel Chawpiovs v1.3.0 (PC & Nintendo Switch), adds “The Galaxy’s Most Wanted” cards and more",
+            "url": "https://wololo.net/2026/05/15/homebrew-release-warnel-chawpiovs-v1-3-0-pc-nintendo-switch-adds-the-galaxys-most-wanted-cards-and-more/",
+            "date": "2026-05-15T10:07:49.000Z",
+            "author": "wololo",
+            "summary": "I’ve just released version 1.3.0 of “Warnel Chawpiovs”, a homebrew game for PC (Windows, Linux, MacOS versions are now available) and Nintendo Switch. I’m particularly excited because this release adds a deck editor which...\nThe post Homebrew Release: Warnel Chawpiovs v1.3.0 (PC & Nintendo Switch), adds “The Galaxy’s Most Wanted” cards and more appeared first on Wololo.net."
+        },
+        {
+            "title": "Homebrew Release: Warnel Chawpiovs v1.2.0 (PC & Nintendo Switch), adds “Sinister Motives” cards and more",
+            "url": "https://wololo.net/2026/04/17/homebrew-release-warnel-chawpiovs-v1-2-0-pc-nintendo-switch-adds-sinister-motives-cards-and-more/",
+            "date": "2026-04-17T08:53:24.000Z",
+            "author": "wololo",
+            "summary": "I’m excited to release version 1.2.0 of “Warnel Chawpiovs”, a homebrew game for PC (Windows, Linux, MacOS versions are now available) and Nintendo Switch. This new release adds cards from the Sinister Motives expansion...\nThe post Homebrew Release: Warnel Chawpiovs v1.2.0 (PC & Nintendo Switch), adds “Sinister Motives” cards and more appeared first on Wololo.net."
         }
     ]
 }

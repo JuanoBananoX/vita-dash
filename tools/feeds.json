@@ -1,0 +1,14 @@
+{
+    "feeds": [
+        {
+            "name": "blog",
+            "url": "https://blog.ortegaflores.com/feeds/posts/default",
+            "maxEntries": 10
+        },
+        {
+            "name": "scene",
+            "url": "https://wololo.net/feed",
+            "maxEntries": 5
+        }
+    ]
+}
