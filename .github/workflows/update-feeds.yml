@@ -3,28 +3,46 @@ name: Update VitaDash Feeds
 on:
   workflow_dispatch:
 
+  schedule:
+    # Every 6 hours
+    - cron: "0 */6 * * *"
+
 permissions:
   contents: write
 
 jobs:
   update-feeds:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
+          cache: npm
+          cache-dependency-path: tools/package-lock.json
 
       - name: Install dependencies
         working-directory: tools
-        run: npm install
+        run: npm ci
 
       - name: Generate feeds
         working-directory: tools
         run: npm run update
+
+      - name: Commit updated feeds
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add feeds/*.json
+
+          if git diff --cached --quiet; then
+            echo "No feed updates."
+          else
+            git commit -m "chore(feeds): update RSS feeds"
+            git push
+          fi
